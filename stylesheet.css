@@ -53,27 +53,13 @@ body {
     text-align: left;
     position: center;
   }
-  
-  #message text {
-    color: white;
-    font-weight: 200;
-  }
-  
   #chatbox say {
     color: white;
     font-weight:100;
     margin-right: 4px;
     margin-left: 4px;
   }
-  #message name {
-    color: #ff00ff;
-    font-weight: 700;
-    margin-top: 4px;
-    margin-right: 2px;
-    margin-bottom: 2px;
-    margin-left: 8px;
-  }
-  
+
   #name {
     color: #ff00ff;
     font-weight: 700;
@@ -83,10 +69,10 @@ body {
     margin-left: 8px;
   }
   
-  #chatbox p {
+  #chatbox p { /*serves as name function */
     color: #ff00ff;
     font-weight: 700;
-    margin-top: 4px;
+    margin-top: 2px;
     margin-right: 2px;
     margin-bottom: 2px;
     margin-left: 8px;
@@ -102,7 +88,7 @@ body {
     font-weight: 700;
     margin-top: 4px;
     margin-right: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     margin-left: 8px;
   }
   
