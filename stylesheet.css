@@ -33,14 +33,15 @@ body {
   #chatbox {
     background-color: #23283d;
     width: 75%;
-    height: 75%;
-    margin: 0 auto;
+	height: 600px;
+	overflow: auto;
+    margin: auto;
     margin-top: 10px;
     border: ridge #101320;
     text-align: left;
   }
   
-  #messagebox { /* stuff to do: fix overflow problem */
+   #messagebox {
     font-family: Verdana;
     font-size: 16px;
     color: white;
@@ -51,7 +52,6 @@ body {
     border: ridge #101320;
     text-align: left;
     position: center;
-    overflow: hidden; /*See if this makes any changes*/
   }
   
   #message text {
@@ -73,5 +73,8 @@ body {
     margin-bottom: 2px;
     margin-left: 8px;
   }
+  
+  #chat-area span                 { color: black; background: #ff00ff; padding: 4px 8px; -moz-border-radius: 5px; -webkit-border-radius: 8px; margin: 0 5px 0 0; }
+
   
   
