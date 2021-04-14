@@ -118,22 +118,16 @@
 	
 	
 </head>
-
 <body onload="setInterval('chat.update()', 2)">
     <div id="page-wrap">
-        <h id="title">The NAC</h>
-        
-
-       <div id="chatbox"></div>
-            <p id="subtext">Send Message as: "name"</p>
+        <h id="title">The NAC 2.0</h>
+        <p id="subtext">Room A</p>
+        <div id="chatbox"></div>
+        <p id="subtext">Send Message as: $nickname</p>
         <form>
-            
             <center><textarea id="messagebox" maxlength = '700'></textarea></center>
         </form>
     </div>
-
-
-	
 </body>
 <script>
 	const leaveAnnouncement = name + ' has left';

@@ -1,94 +1,104 @@
 /* ---- Page Scaling & color information ---- */
 
-html {
-    height: 100%;
-  }
+html /* necessary for width% and height% info */
+{
+  height: 100%;
+}
   
-body {
-    background-color: #1e2233;
-    color: white;
-    font-family: Verdana;
-    font-size: 16px;
-    height: 95%;
-    text-align: center;
-  }
+body /* basic background and text style info */
+{
+  background-color: #1e2233;
+  color: white;
+  font-family: Verdana;
+  font-size: 16px;
+  height: 95%;
+  text-align: center;
+}
   
-  /* ---- Tags for coloring / div stuff (might convert to classes eventually) ---- */
+#title /* Main text */
+{
+  font-family: Verdana;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: 900;
+}
   
-  #title {
-    font-family: Verdana;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    font-weight: 900;
-  }
+#subtext /* subtext */
+{
+  font-family: Verdana;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+#messagebox /* div for text input */
+{
+  font-family: Verdana;
+  font-size: 16px;
+  color: white;
+  background-color: #23283d;
+  width: 35%;
+  height: 100px;
+  margin: 0 auto;
+  border: ridge #101320;
+  text-align: left;
+  position: center;
+}
   
-  #subtext {
-    font-family: Verdana;
-    text-align: center;
-    font-size: 15px;
-    color: white;
-  }
-  
-  #chatbox {
-    background-color: #23283d;
-    width: 75%;
+#chatbox /* div for chatbox */
+{
+  background-color: #23283d;
+  width: 75%;
 	height: 600px;
 	overflow: auto;
-    margin: auto;
-    margin-top: 10px;
-    border: ridge #101320;
-    text-align: left;
-  }
+  margin: auto;
+  margin-top: 10px;
+  border: ridge #101320;
+  text-align: left;
+}
   
-   #messagebox {
-    font-family: Verdana;
-    font-size: 16px;
-    color: white;
-    background-color: #23283d;
-    width: 35%;
-    height: 100px;
-    margin: 0 auto;
-    border: ridge #101320;
-    text-align: left;
-    position: center;
-  }
-  #chatbox say {
-    color: white;
-    font-weight:100;
-    margin-right: 4px;
-    margin-left: 4px;
-  }
+#chatbox say /* chatbox ">" formating */
+{
+  color: white;
+  font-weight:100;
+  margin-right: 4px;
+  margin-left: 4px;
+}
 
-  #name {
-    color: #ff00ff;
-    font-weight: 700;
-    margin-top: 4px;
-    margin-right: 2px;
-    margin-bottom: 2px;
-    margin-left: 8px;
-  }
+#name /* contains the message with name/text | try out #chatbox name {} */
+{
+  color: #ff00ff;
+  font-weight: 700;
+  margin-top: 4px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  margin-left: 8px;
+}
   
-  #chatbox p { /*serves as name function */
-    color: #ff00ff;
-    font-weight: 700;
-    margin-top: 2px;
-    margin-right: 2px;
-    margin-bottom: 2px;
-    margin-left: 8px;
-  }
+#chatbox p /* contains the message with name/text */
+{ 
+  color: #ff00ff;
+  font-weight: 700;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  margin-left: 8px;
+}
   
-   #chatbox text {
-    color: white;
-    font-weight: 200;
-  }
+#chatbox text  /* actual text portion of the message */
+{
+  color: white;
+  font-weight: 200;
+}
   
-   #chatbox announce {
-    color: #e91e63;
-    font-weight: 700;
-    margin-top: 4px;
-    margin-right: 2px;
-    margin-bottom: 4px;
-    margin-left: 8px;
-  }
+#chatbox announce /* style for the server annoucements */
+{
+  color: #e91e63;
+  font-weight: 700;
+  margin-top: 4px;
+  margin-right: 2px;
+  margin-bottom: 4px;
+  margin-left: 8px;
+}
   
