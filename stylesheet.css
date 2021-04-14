@@ -58,9 +58,19 @@ body {
     font-weight: 200;
   }
   
+  #message say {
+    color: white;
+    font-weight:100;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
   #message name {
     color: #ff00ff;
     font-weight: 700;
+    margin-top: 4px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 8px;
   }
   
   
