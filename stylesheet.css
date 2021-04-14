@@ -8,9 +8,9 @@ body {
     background-color: #1e2233;
     color: white;
     font-family: Verdana;
-    text-align: center;
     font-size: 16px;
     height: 95%;
+    text-align: center;
   }
   
   /* ---- Tags for coloring / div stuff (might convert to classes eventually) ---- */
@@ -37,6 +37,7 @@ body {
     margin: 0 auto;
     margin-top: 10px;
     border: ridge #101320;
+    text-align: left;
   }
   
   #messagebox {
