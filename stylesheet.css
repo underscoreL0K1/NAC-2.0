@@ -51,6 +51,7 @@ body {
     border: ridge #101320;
     text-align: left;
     position: center;
+    overflow: hidden;
   }
   
   #message text {
