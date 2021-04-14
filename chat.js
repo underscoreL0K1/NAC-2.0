@@ -80,15 +80,14 @@ function sendChat(message, nickname)
 		});
 }
 
-function announceUser(message, nickname)
+function announceUser(message)
 {       
      $.ajax({
 		   type: "POST",
 		   url: "process.php",
 		   data: {  
-		   			'function': 'send',
+		   			'function': 'announce',
 					'message': message,
-					'nickname': nickname,
 					'file': file
 				 },
 		   dataType: "json",

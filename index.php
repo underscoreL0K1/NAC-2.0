@@ -110,7 +110,7 @@
     	});
 		
 	const joinAnnouncement = name + ' has joined the gulag';
-	chat.announce(joinAnnouncement, "Server");	
+	chat.announce(joinAnnouncement);	
 	
 
 
@@ -121,12 +121,10 @@
 
 <body onload="setInterval('chat.update()', 2)">
     <div id="page-wrap">
-        <h2><center>The NAC</h2>
+        <h id="title">The NAC</h>
         
-       </p>
 
-       <div id="chatbox">
-	   </div>
+       <div id="chatbox"></div>
             <p id="subtext">Send Message as: "name"</p>
         <form>
             
