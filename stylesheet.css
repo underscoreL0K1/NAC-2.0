@@ -40,7 +40,7 @@ body {
     text-align: left;
   }
   
-  #messagebox {
+  #messagebox { /* stuff to do: fix overflow problem */
     font-family: Verdana;
     font-size: 16px;
     color: white;
@@ -51,7 +51,7 @@ body {
     border: ridge #101320;
     text-align: left;
     position: center;
-    overflow: hidden;
+    overflow: hidden; /*See if this makes any changes*/
   }
   
   #message text {
