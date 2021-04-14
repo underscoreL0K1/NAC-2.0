@@ -1,4 +1,5 @@
 /* ---- Page Scaling & color information ---- */
+
 html {
     height: 100%;
   }
@@ -14,7 +15,7 @@ body {
   
   /* ---- Tags for coloring / div stuff (might convert to classes eventually) ---- */
   
-  .title {
+  #title {
     font-family: Verdana;
     text-align: center;
     font-size: 30px;
@@ -22,14 +23,14 @@ body {
     font-weight: 900;
   }
   
-  .subtext {
+  #subtext {
     font-family: Verdana;
     text-align: center;
     font-size: 15px;
     color: white;
   }
   
-  .chatbox {
+  #chatbox {
     background-color: #23283d;
     width: 75%;
     height: 75%;
@@ -38,7 +39,7 @@ body {
     border: ridge #101320;
   }
   
-  .messagebox {
+  #messagebox {
     font-family: Verdana;
     font-size: 16px;
     color: white;
@@ -51,12 +52,12 @@ body {
     position: center;
   }
   
-  .message text {
+  #message text {
     color: white;
     font-weight: 200;
   }
   
-  .message name {
+  #message name {
     color: #ff00ff;
     font-weight: 700;
   }
