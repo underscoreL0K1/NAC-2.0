@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="/images/nac16x16v4.png">
+    <title>NAC 2.0</title>
+<style>
+
+/* ---- Page Scaling & color information ---- */
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #1e2233;
+  color: white;
+  font-family: Verdana;
+  text-align: center;
+  font-size: 16px;
+  height: 95%;
+}
+
+/* ---- Tags for coloring / div stuff (might convert to classes eventually) ---- */
+
+#title {
+  font-family: Verdana;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: 900;
+}
+
+#subtext {
+  font-family: Verdana;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+#chatbox {
+  background-color: #23283d;
+  width: 75%;
+  height: 75%;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: ridge #101320;
+}
+
+#messagebox {
+  font-family: Verdana;
+  font-size: 16px;
+  color: white;
+  background-color: #23283d;
+  width: 35%;
+  height: 100px;
+  margin: 0 auto;
+  border: ridge #101320;
+  text-align: left;
+  position: center;
+}
+
+#message text {
+  color: white;
+  font-weight: 200;
+}
+
+#message name {
+  color: #ff00ff;
+  font-weight: 700;
+}
+
+
+</style>
+<!--
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
+    <script type="text/javascript">
+	
+        var admin = false;	
+        var name = prompt("Enter Username:", "");
+        
+    	if (!name || name === ' ') {
+    	   name = "Anon";	
+    	}  else if (name.length >= 16) {
+			name = "Retarded Spammer";
+		}
+        else if(name == "H" || name == "h" || name == "D" || name == "d")
+        {
+            var password = prompt('password?', "")
+            if(password == "GnirLleb")
+            {
+                admin = true;
+                if(name == 'h')
+                {
+                    name = 'H';
+                    }
+                }
+                else
+                {
+                    name = "retard";
+                    }
+            }
+
+
+    	name = name.replace(/(<([^>]+)>)/ig,"");
+    	
+    	$("#name-area").html("You are: <span>" + name + "</span>");
+    	
+		
+		
+        var chat =  new Chat();
+    	$(function() {
+    	
+    		 chat.getState(); 
+    		 
+             $("#sendie").keydown(function(event) {  
+             
+                 var key = event.which;  
+           
+                 if (key >= 33) {
+                   
+                     var maxLength = $(this).attr("maxlength");  
+                     var length = this.value.length;  
+                     
+                     if (length >= maxLength) {  
+                         event.preventDefault();  
+                     }  
+                  }  
+    		 			
+																																													});
+    		 $('#sendie').keyup(function(e) {	
+    		 					 
+    			  if (e.keyCode == 13) { 
+    			  
+                    var text = $(this).val(); 
+    				var maxLength = $(this).attr("maxlength");  
+                    var length = text.length; 
+                     
+                    if (length <= maxLength + 1) { 
+                     
+    			        chat.send(text, name);	
+    			        $(this).val("");
+    			        
+                    } else {
+                    
+    					$(this).val(text.substring(0, maxLength));
+    					
+    				}	
+    				
+					if(text.includes('/cc') && admin == false)
+                     {
+                         const marco = ' shut up ' + name + ' you dirty non-admin trying to use commands'
+                         chat.announce(marco, "Server")
+                         } else if (text.includes('/cc') && admin == true) {
+							 chat.clear();
+						 }
+    			  }
+             });
+    	});
+		
+	const joinAnnouncement = name + ' has joined the chat.';
+	chat.announce(joinAnnouncement, "Server");	
+	
+    </script>
+-->
+</head>
+
+<body onload="setInterval('chat.update()', 2)">
+<h id="title">The NAC 2.0</h>
+  <p id="subtext">Room A</p>
+    <div id="chatbox">
+      <div id="message"></div>
+      <!-- hey all scott here -->
+    </div>
+    <p id="subtext">Send Message as: "name"</p>
+    <form>
+      <input id="messagebox" maxlength = "8" type="text"><br>
+    </form>
+</body>
+<script>
+	const leaveAnnouncement = name + ' has left';
+	window.onbeforeunload = function() {
+	chat.announce(leaveAnnouncement, "Server");	
+}
+</script>
+</html>
