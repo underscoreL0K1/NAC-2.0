@@ -9,14 +9,6 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
     <title>NAC 2.0</title>
 
-	
-	
-	
-
-
-
-
-
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="chat.js"></script>
     <script type="text/javascript">
@@ -124,9 +116,9 @@
         <p id="subtext">Room A</p>
         <div id="room">
             <h id="title">Rooms</h>
-            <button class="button rooma">Room 1</button>
-            <button class="button roomb">Room 2</button>
-            <button class="button roomc">Room 3</button>
+            <button class="button rooma" href="/chatone.php">Room 1</button>
+            <button class="button roomb" href="/chattwo.php">Room 2</button>
+            <button class="button roomc" href="/chatthree.php">Room 3</button>
         </div>
         <div id="chatbox"></div>
         <p id="subtext">Send Message as: $nickname</p>
