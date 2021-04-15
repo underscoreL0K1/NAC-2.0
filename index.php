@@ -114,13 +114,21 @@
     <div id="page-wrap">
         <h id="title">The NAC 2.0</h>
         <p id="subtext">Room A</p>
-        <div id="room">
+        <div id="sidebar">
             <h id="title">Rooms</h>
-            <button class="button rooma" href="/chatone.php">Room 1</button>
-            <button class="button roomb" href="/chattwo.php">Room 2</button>
-            <button class="button roomc" href="/chatthree.php">Room 3</button>
+            <div id="buttonContainer">
+                <button class="button rooma" href="/chatone.php">Room A</button>
+                <button class="button roomb" href="/chattwo.php">Room B</button>
+                <button class="button roomc" href="/chatthree.php">Room C</button>
+            </div>  
+            <h id="title">Online</h>
+            <div id="onlineContainer">
+                <!--put the online people list here -->
+            </div>
         </div>
+        
         <div id="chatbox"></div>
+        
         <p id="subtext">Send Message as: $nickname</p>
         <form>
             <center><textarea id="messagebox" maxlength = '700'></textarea></center>

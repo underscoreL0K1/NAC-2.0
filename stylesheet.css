@@ -64,6 +64,7 @@ body /* basic background and text style info */
   font-weight:100;
   margin-right: 4px;
   margin-left: 4px;
+  position: fixed;
 }
 
 #name /* contains the message with name/text | try out #chatbox name {} */
@@ -102,50 +103,67 @@ body /* basic background and text style info */
   margin-left: 8px;
 }
 
-#room {
+#sidebar { /* sidebar directory */
   background-color: #23283d;
-  position: fixed;
+  position: absolute;
   text-align: center;
-  width: 165px;
-  height: 250px;
+  width: 180px;
+  height: 525px;
   margin: 0 auto;
   border: ridge #101320;
 }
 
-.button {
-  border: none;
+#buttonContainer {
+  background-color: #23283d;
+  text-align: center;
+  width: 150px;
+  height: 210px; /* used to be 210px */
+  margin: 0 auto;
+  border: ridge #101320;
+}
+
+#onlineContainer {
+  background-color: #23283d;
+  text-align: center;
+  width: 150px;
+  height: 210px;
+  margin: 0 auto;
+  border: ridge #101320;
+}
+.button { /* default button design and info */
+  border: solid;
   color: white;
   padding: 16px 32px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  margin-top: 6px;
+  margin-top: 8px;
   cursor: pointer;
 }
 
-.rooma {
+.rooma { /* background color */
   background-color: #ff00ff;
 } 
 
-.rooma:hover {
+.rooma:hover { /* hover color */
   background-color: white;
   color: black;
 }
 
-.roomb {
+.roomb { /* background color */
   background-color: blue;
 } 
 
-.roomb:hover {
+.roomb:hover { /* hover color */
   background-color: white;
   color: black;
 }
 
-.roomc {
+.roomc { /* background color */
   background-color: #ff0000;
 }
 
-.roomc:hover {
+.roomc:hover { /* hover color */
   background-color: white;
   color: black;
 }
