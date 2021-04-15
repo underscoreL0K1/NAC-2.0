@@ -50,7 +50,7 @@
 				} 
 			 
         	
-        	 fwrite(fopen('chat.html', 'a'), $nickname . "<say>><say><text>" . $message = str_replace("\n", " ", $message) . "</text>\n"); 
+        	 fwrite(fopen('chat.html', 'a'), $nickname . "<text>> " . $message = str_replace("\n", " ", $message) . "</text>\n"); 
 		 }
         	 break;
 			 
@@ -67,7 +67,7 @@
 				} 
 			 
         	
-        	 fwrite(fopen('chat.html', 'a'), "ServerLife> " . $message = str_replace("\n", " ", $message) . "\n"); 
+        	 fwrite(fopen('chat.html', 'a'), "<b><announce>" . $message = str_replace("\n", " ", $message) . "</announce></b>\n"); 
 		 }
         	 break;
 			 

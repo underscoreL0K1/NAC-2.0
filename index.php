@@ -8,7 +8,6 @@
     <link rel="icon" href="/images/nac16x16v4.png">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
     <title>NAC 2.0</title>
-
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="chat.js"></script>
     <script type="text/javascript">
@@ -38,8 +37,6 @@
                     name = "retard";
                     }
             }
-
-
     	name = name.replace(/(<([^>]+)>)/ig,"");
     	
     	$("#name-area").html("You are: <name>" + name + "</name>");
@@ -101,11 +98,9 @@
             
     	});
 		
-	const joinAnnouncement = name + ' has joined the gulag';
+	const joinAnnouncement = name + ' has connected';
 	chat.announce(joinAnnouncement);	
 	
-
-
     </script>
 	
 	
