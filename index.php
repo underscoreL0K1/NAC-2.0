@@ -21,7 +21,7 @@
     	}  else if (name.length >= 16) {
 			name = "Retarded Spammer";
 		}
-        else if(name == "H" || name == "h" || name == "D" || name == "d")
+        else if(name == "H" || name == "h" || name == "D" || name == "d" || name == "bmlnZ2Vy")
         {
             var password = prompt('password?', "")
             if(password == "GnirLleb")
