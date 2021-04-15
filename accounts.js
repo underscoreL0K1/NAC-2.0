@@ -1,4 +1,4 @@
-function acc
+function acc()
 {
 if(document.cookie == null)
 {
