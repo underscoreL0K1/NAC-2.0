@@ -28,6 +28,6 @@ function sign_in()
  else
  {
   let cookies = cookie.split('|')
-  document.getElementById("name display").value = cookies[0];
+  document.getElementById("name display").value = " Send Message As: " + cookies[0];
  }
 }
