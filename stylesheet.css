@@ -50,7 +50,7 @@ body /* basic background and text style info */
 {
   background-color: #23283d;
   width: 75%;
-	height: 600px;
+	height: 650px; /* used to be 600px*/
 	overflow: auto;
   margin: auto;
   margin-top: 10px;
