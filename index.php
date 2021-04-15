@@ -10,7 +10,7 @@
     <title>NAC 2.0</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="chat.js"></script>
-	 <script type="text/javascript" src="account.js"></script>
+	 <script type="text/javascript" src="accounts.js"></script>
     <script type="text/javascript">
 	
 	acc()
