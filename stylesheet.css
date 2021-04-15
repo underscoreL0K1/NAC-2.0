@@ -96,7 +96,7 @@ body /* basic background and text style info */
   
 #chatbox announce /* style for the server annoucements */
 {
-  color: #e91e63;
+  color: maroon;
   font-weight: 700;
   margin-top: 4px;
   margin-right: 2px;
