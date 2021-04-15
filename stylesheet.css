@@ -101,4 +101,51 @@ body /* basic background and text style info */
   margin-bottom: 4px;
   margin-left: 8px;
 }
-  
+
+#room {
+  background-color: #23283d;
+  position: fixed;
+  text-align: center;
+  width: 165px;
+  height: 250px;
+  margin: 0 auto;
+  border: ridge #101320;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.rooma {
+  background-color: #ff00ff;
+} 
+
+.rooma:hover {
+  background-color: white;
+  color: black;
+}
+
+.roomb {
+  background-color: blue;
+} 
+
+.roomb:hover {
+  background-color: white;
+  color: black;
+}
+
+.roomc {
+  background-color: #ff0000;
+}
+
+.roomc:hover {
+  background-color: white;
+  color: black;
+}

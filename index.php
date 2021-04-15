@@ -122,6 +122,12 @@
     <div id="page-wrap">
         <h id="title">The NAC 2.0</h>
         <p id="subtext">Room A</p>
+        <div id="room">
+            <h id="title">Rooms</h>
+            <button class="button rooma">Room 1</button>
+            <button class="button roomb">Room 2</button>
+            <button class="button roomc">Room 3</button>
+        </div>
         <div id="chatbox"></div>
         <p id="subtext">Send Message as: $nickname</p>
         <form>
