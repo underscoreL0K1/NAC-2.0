@@ -10,10 +10,10 @@
     <title>NAC 2.0</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="chat.js"></script>
-	 <script type="text/javascript" src="account.js"></script>
+	 <script type="text/javascript" src="accounts.js"></script>
     <script type="text/javascript">
 	
-	acc()
+	//acc()
         var admin = false;	
         var name = prompt("Display Name:", "");
         
@@ -39,6 +39,7 @@
                     }
             }
     	name = name.replace(/(<([^>]+)>)/ig,"");
+	    document.getElementById("subtext").innerHTML = "Send Message as: " + name;
     	
     	$("#name-area").html("You are: <name>" + name + "</name>");
     	
