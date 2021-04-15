@@ -2,8 +2,8 @@ function acc
 {
 if(document.cookie == null)
 {
- var name = prompt("enter a username", "");
- var pass = prompt("enter a password","");
+ var name = prompt("1enter a username", "");
+ var pass = prompt("1enter a password","");
  if(true)//replace true with if account exists and if pass matches
  {
   sign_in()
