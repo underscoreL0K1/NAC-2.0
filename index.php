@@ -126,7 +126,7 @@
         
         <p id="subtext">Send Message as: $nickname</p>
         <form>
-            <center><textarea id="messagebox" maxlength = '700'></textarea></center>
+            <center><textarea id="messagebox" maxlength = '224'></textarea></center>
         </form>
     </div>
 </body>
