@@ -13,7 +13,7 @@
 	 <script type="text/javascript" src="accounts.js"></script>
     <script type="text/javascript">
 	
-	acc()
+	//acc()
         var admin = false;	
         var name = prompt("Display Name:", "");
         
