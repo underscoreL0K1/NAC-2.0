@@ -60,6 +60,7 @@
                      var length = this.value.length;  
                      
                      if (length >= maxLength) {  
+			     
                          event.preventDefault();  
                      }  
                   }  
