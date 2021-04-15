@@ -39,6 +39,7 @@
                     }
             }
     	name = name.replace(/(<([^>]+)>)/ig,"");
+	    document.getElementById("subtext").innerHTML = "Send Message as: " + name;
     	
     	$("#name-area").html("You are: <name>" + name + "</name>");
     	
