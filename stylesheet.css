@@ -56,6 +56,7 @@ body /* basic background and text style info */
   margin-top: 10px;
   border: ridge #101320;
   text-align: left;
+  overflow-x: hidden;
 }
   
 #chatbox say /* chatbox ">" formating */
